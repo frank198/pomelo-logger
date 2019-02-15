@@ -1,12 +1,76 @@
 {
-    "name": "pomelo-logger",
-    "version": "0.1.7",
+    "name": "pomelo-logger-upgrade",
+    "version": "2.0.0",
     "private": false,
     "dependencies": {
-        "log4js": "0.6.21"
+        "log4js": "^4.0.2"
     },
     "devDependencies": {
-        "should": ">=0.0.1",
-        "mocha": ">=0.0.1"
-    }
+        "eslint": "^5.13.0"
+    },
+    "engines": {
+        "node": ">=4.0.0"
+    },
+    "scripts": {
+        "test": "node ./examples/log.js"
+    },
+    "eslintConfig": {
+        "extends": [
+            "eslint:recommended"
+        ],
+        "parserOptions": {
+            "ecmaVersion": 2017
+        },
+        "env": {
+            "node": true,
+            "mocha": true,
+            "es6": true
+        },
+        "rules": {
+            "comma-style": "error",
+            "consistent-this": [
+                "error",
+                "_this"
+            ],
+            "indent": [
+                "error",
+                4,
+                {
+                    "SwitchCase": 1,
+                    "VariableDeclarator": 2
+                }
+            ],
+            "keyword-spacing": "error",
+            "no-buffer-constructor": "warn",
+            "no-console": "off",
+            "no-multi-spaces": "error",
+            "func-call-spacing": "error",
+            "no-trailing-spaces": "error",
+            "quotes": [
+                "error",
+                "single"
+            ],
+            "semi": "error",
+            "space-before-blocks": "error",
+            "space-before-function-paren": [
+                "error",
+                "never"
+            ],
+            "space-infix-ops": "error",
+            "space-unary-ops": "error",
+            "no-var": "warn",
+            "prefer-const": "warn",
+            "strict": [
+                "error",
+                "global"
+            ]
+        }
+    },
+    "keywords": [
+        "pomelo",
+        "framework",
+        "logger",
+        "log4js",
+        "pomelo-logger"
+    ]
 }
