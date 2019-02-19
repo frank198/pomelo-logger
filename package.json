@@ -1,12 +1,12 @@
 {
     "name": "pomelo-logger-upgrade",
-    "version": "2.0.0",
+    "version": "2.0.4",
     "private": false,
     "dependencies": {
         "log4js": "^4.0.2"
     },
     "devDependencies": {
-        "eslint": "^5.13.0"
+        "eslint": "^5.14.0"
     },
     "engines": {
         "node": ">=4.0.0"
